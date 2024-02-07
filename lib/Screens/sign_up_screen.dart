@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/Screens/home-screen.dart';
 import 'package:shopping_app/Screens/login-screen.dart';
+import 'package:shopping_app/Screens/navigation_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -80,7 +81,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (ctx) => HomeScreen()));
+                            MaterialPageRoute(builder: (ctx) => NavigationScreen()));
                       },
                       style: ElevatedButton.styleFrom(
                         maximumSize: Size.fromHeight(55),

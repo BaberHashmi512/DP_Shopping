@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/Screens/home-screen.dart';
+import 'package:shopping_app/Screens/navigation_screen.dart';
 import 'package:shopping_app/Screens/sign_up_screen.dart';
 
 import 'forgot_password.dart';
@@ -68,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (ctx) => const HomeScreen()));
+                            MaterialPageRoute(builder: (ctx) => const NavigationScreen()));
                       },
                       style: ElevatedButton.styleFrom(
                         maximumSize: const Size.fromHeight(55),

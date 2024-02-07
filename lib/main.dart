@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Color(0XFFDB3022),
         useMaterial3: true,
       ),
-      home: NavigationScreen(),
+      home: LoginScreen(),
     );
   }
 }
