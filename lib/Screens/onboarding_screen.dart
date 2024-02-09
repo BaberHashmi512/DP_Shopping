@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:shopping_app/Screens/home-screen.dart';
+import 'package:shopping_app/Screens/navigation_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
   final introKey = GlobalKey<IntroductionScreenState>();
@@ -51,7 +52,7 @@ class OnboardingScreen extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (ctx) => HomeScreen()));
+                    context, MaterialPageRoute(builder: (ctx) => NavigationScreen()));
               },
               style: ElevatedButton.styleFrom(
                   maximumSize: Size.fromHeight(55),
